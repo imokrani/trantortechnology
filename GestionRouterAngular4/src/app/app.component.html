@@ -1,0 +1,13 @@
+
+  <h4>
+    Service d'auto-planification des utilisateurs EDF <h1>{{title}}</h1>
+    Ici vont atterir les deux composant selon la route choisie 
+  </h4>
+  <a routerLink="/comp1" routerLinkActive="active">Component1</a>
+  <a routerLink="/comp2" routerLinkActive="active">Component2</a>  
+  <a routerLink="/comp1/my_param" routerLinkActive="active">Component1 with param  comp1/:param</a>
+  <a [routerLink]="['comp2', 'my_token']" routerLinkActive="active">Component2 whith param comp1/:token</a> 
+  <br>
+  <a [routerLink]="['comp2', 'Le Token 1', 'Le teken 2']" routerLinkActive="active">Component 2 with tow parametrs </a>
+  <router-outlet></router-outlet>
+  
